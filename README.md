@@ -7,6 +7,7 @@
 ## 📁 專案結構說明
 
 titanic_cleaning_project/
+test
 ├── airflow_project/
 │   ├── dags/                    # Airflow 任務排程腳本
 │   │   ├── example_dag.py
@@ -32,6 +33,7 @@ titanic_cleaning_project/
 ├── .env                        # 儲存資料庫連線設定（已加入 .gitignore）
 ├── .gitignore                  # 忽略 log 和 .env 等敏感檔案
 └── README.md                   # 專案說明文件（本檔案）
+
 ---
 
 ## 🔄 資料清洗步驟（`data_practice.py`）
