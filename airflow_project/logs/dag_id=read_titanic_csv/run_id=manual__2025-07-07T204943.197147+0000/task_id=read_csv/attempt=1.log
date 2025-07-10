@@ -1,0 +1,20 @@
+[2025-07-07T20:49:44.564+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: read_titanic_csv.read_csv manual__2025-07-07T20:49:43.197147+00:00 [queued]>
+[2025-07-07T20:49:44.569+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: read_titanic_csv.read_csv manual__2025-07-07T20:49:43.197147+00:00 [queued]>
+[2025-07-07T20:49:44.570+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-07-07T20:49:44.577+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): read_csv> on 2025-07-07 20:49:43.197147+00:00
+[2025-07-07T20:49:44.581+0000] {standard_task_runner.py:60} INFO - Started process 203 to run task
+[2025-07-07T20:49:44.583+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'read_titanic_csv', 'read_csv', 'manual__2025-07-07T20:49:43.197147+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/titanic_dag.py', '--cfg-path', '/tmp/tmp4_rtqmwg']
+[2025-07-07T20:49:44.585+0000] {standard_task_runner.py:88} INFO - Job 39: Subtask read_csv
+[2025-07-07T20:49:44.595+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-07T20:49:44.632+0000] {task_command.py:423} INFO - Running <TaskInstance: read_titanic_csv.read_csv manual__2025-07-07T20:49:43.197147+00:00 [running]> on host d6427619f992
+[2025-07-07T20:49:44.790+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='read_titanic_csv' AIRFLOW_CTX_TASK_ID='read_csv' AIRFLOW_CTX_EXECUTION_DATE='2025-07-07T20:49:43.197147+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-07T20:49:43.197147+00:00'
+[2025-07-07T20:49:44.810+0000] {logging_mixin.py:188} INFO -    Survived  Pclass  Sex   Age  SibSp  Parch     Fare Embarked
+0         0       3    0  22.0      1      0   7.2500        S
+1         1       1    1  38.0      1      0  71.2833        C
+2         1       3    1  26.0      0      0   7.9250        S
+3         1       1    1  35.0      1      0  53.1000        S
+4         0       3    0  35.0      0      0   8.0500        S
+[2025-07-07T20:49:44.810+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-07-07T20:49:44.816+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=read_titanic_csv, task_id=read_csv, execution_date=20250707T204943, start_date=20250707T204944, end_date=20250707T204944
+[2025-07-07T20:49:44.837+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-07-07T20:49:44.851+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
