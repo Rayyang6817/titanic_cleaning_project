@@ -8,30 +8,30 @@
 
 titanic_cleaning_project/
 ├── airflow_project/
-│ ├── dags/ # Airflow 任務排程腳本
-│ │ ├── example_dag.py
-│ │ └── titanic_dag.py # 主要的 DAG 任務，執行 CSV 載入任務
-│ ├── data/ # 提供給 DAG 任務使用的資料
-│ │ └── cleaned_titanic.csv
-│ ├── logs/ # Airflow 產生的 log 檔案
-│ ├── plugins/ # 預留自定 plugin 目錄
-│ └── docker-compose.yaml # Airflow 使用的 Docker 設定檔
+│   ├── dags/                    # Airflow 任務排程腳本
+│   │   ├── example_dag.py
+│   │   └── titanic_dag.py       # 主要的 DAG 任務，執行 CSV 載入任務
+│   ├── data/                    # 提供給 DAG 任務使用的資料
+│   │   └── cleaned_titanic.csv
+│   ├── logs/                    # Airflow 產生的 log 檔案
+│   ├── plugins/                 # 預留自定 plugin 目錄
+│   └── docker-compose.yaml     # Airflow 使用的 Docker 設定檔
 │
 ├── data/
-│ ├── uncleaned_titanic.csv # 原始 Titanic 資料
-│ └── cleaned_titanic.csv # 資料清洗後結果
+│   ├── uncleaned_titanic.csv    # 原始 Titanic 資料
+│   └── cleaned_titanic.csv      # 資料清洗後結果
 │
 ├── etl/
-│ ├── train.csv # 模擬資料來源
-│ └── etl_house_price.py # ETL 範例腳本，可匯入資料至 PostgreSQL
+│   ├── train.csv                # 模擬資料來源
+│   └── etl_house_price.py      # ETL 範例腳本，可匯入資料至 PostgreSQL
 │
 ├── doc/
-│ └── data_description.md # Titanic 各欄位的中文說明
+│   └── data_description.md     # Titanic 各欄位的中文說明
 │
-├── data_practice.py # 資料清洗主要邏輯實作
-├── .env # 儲存資料庫連線設定（已加入 .gitignore）
-├── .gitignore # 忽略 log 和 .env 等敏感檔案
-└── README.md # 專案說明文件（本檔案）
+├── data_practice.py            # 資料清洗主要邏輯實作
+├── .env                        # 儲存資料庫連線設定（已加入 .gitignore）
+├── .gitignore                  # 忽略 log 和 .env 等敏感檔案
+└── README.md                   # 專案說明文件（本檔案）
 ---
 
 ## 🔄 資料清洗步驟（`data_practice.py`）
