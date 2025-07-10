@@ -5,7 +5,7 @@
 ---
 
 ## 📁 專案結構說明
-
+``` 
 titanic_cleaning_project/
 ├── airflow_project/
 │ ├── dags/
@@ -28,7 +28,7 @@ titanic_cleaning_project/
 ├── .env
 ├── .gitignore
 └── README.md
-
+```
 ---
 
 ### 📄 各目錄/檔案說明
